@@ -1,5 +1,5 @@
 /* Загальні утиліти */
-:root {
+/* :root {
     --primary-bg-color: #F5F5F5;
     --secondary-bg-color: #F5F4FA; 
     --tertiary-bg-and-text-color: #FFFFFF; 
@@ -44,10 +44,10 @@ width: 1200px;
 margin: 0 auto;
 padding-left: 15px;
 padding-right: 15px;
-}
+} */
 
 /* ------------- Header & Footer ---------------- */
-.header-container {
+/* .header-container {
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -57,10 +57,10 @@ padding-right: 15px;
 }
 .portfolio-header {
     border-bottom: 1px solid #ECECEC;
-}
+} */
 
 /* Логотип */
-.logo {
+/* .logo {
     color: var(--primary-accent-bg-and-text-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -68,15 +68,15 @@ padding-right: 15px;
     line-height: 1.2;
     margin-right: 93px;
 }
-.logo--black {
+.logo__item--black {
     color: #000000;
 }
-.logo--white {
+.logo__item--white {
     color: var(--tertiary-bg-and-text-color);
-}
+} */
 
 /* Панель навігації обох сторінок*/
-.nav {
+/* .nav {
     display: flex;
     gap: 50px;
 }
@@ -111,11 +111,11 @@ padding-right: 15px;
     border-radius: 2px;
     opacity: 1;
     transition: opacity 250ms var(--transition-timing-function);
-}
+} */
 
 /* Адреса та контакти */
 
-.header-contacts {
+/* .header-contacts {
     display: flex; 
     gap: 50px;  
     margin-left: auto;
@@ -151,9 +151,9 @@ padding-right: 15px;
 .header-contacts__icon-smartphone:hover,
 .header-contacts__icon-smartphone:focus {
     fill: var(--primary-accent-bg-and-text-color);
-} 
+}  */
 
-
+/* 
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -196,11 +196,11 @@ padding-right: 15px;
     color: var(--tertiary-bg-and-text-color);
     padding-top: 12px;
     margin-bottom: 20px;
-}
+} */
 /* Стилі для іконок-соцмереж див. у секці команди*/
 
 /* Підписка на розсилку */
-.signup-form-wrap {
+/* .signup-form-wrap {
     margin-left: 93px;
     width: 100%;
 }
@@ -264,11 +264,11 @@ padding-right: 15px;
     top: 50%;
     right: 28px;
     transform: translateY(-50%);
-}
+} */
 /* ---------------------- Кнопки ----------------------------- */
 
 /* Кнопка сторінки Студія (герой) */
-.button {
+/* .button {
     display: block;
     margin: 0 auto;   
     height: 50px;      
@@ -293,10 +293,10 @@ padding-right: 15px;
 }
 .button--narrow {
     min-width: 200px;
-}
+} */
 
 /* Кнопки сторінки Портфоліо */
-.portfolio-btn-list {
+/* .portfolio-btn-list {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -321,11 +321,11 @@ padding-right: 15px;
     color: var(--tertiary-bg-and-text-color);
     background-color: var(--primary-accent-bg-and-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* ----------------- Сторінка Студія -----------------*/ 
 /* Герой */
-.hero-container {
+/* .hero-container {
     height: 600px;
     width: 1600px;
     margin-left: auto;
@@ -351,9 +351,9 @@ padding-right: 15px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0 auto 30px auto;
-}
+} */
 /* Модальне вікно */
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -400,9 +400,9 @@ padding-right: 15px;
 .modal__close-btn:focus {
     cursor: pointer;
     fill: var(--primary-accent-bg-and-text-color);
-}
+} */
 /* Форма модального вікна */
-.application-form {
+/* .application-form {
     padding: 40px;
 }
 .application-form__header {
@@ -531,11 +531,11 @@ padding-right: 15px;
 .application-form__checkbox:checked ~ .application-form__checkbox-icon {
     background-color: var(--primary-accent-bg-and-text-color);
     border: 1px solid transparent;
-}
+} */
 /* Стилі для кнопки-відправки форми в секці герой вище */
 
 /* Переваги студії */
-.advant-container {
+/* .advant-container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -567,11 +567,11 @@ padding-right: 15px;
     justify-content: center;
     border-radius: 4px;
     margin-bottom: 30px;
-}
+} */
 
 /* Напрями діяльності студії */
 
-.activities-container {
+/* .activities-container {
     padding-bottom: 94px;
 }
 .container__activities-section-title {
@@ -603,11 +603,11 @@ padding-right: 15px;
     text-transform: uppercase;
     color: var(--tertiary-bg-and-text-color);
     background: rgba(47, 48, 58, 0.8);
-}
+} */
 
 /* Команда студії */
 
-.team-container {
+/* .team-container {
     background-color: var(--secondary-bg-color);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -631,10 +631,10 @@ padding-right: 15px;
     display: block;
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* Підписи під фото */
-.team-list__meta {
+/* .team-list__meta {
     padding: 30px 10px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -652,9 +652,9 @@ padding-right: 15px;
     line-height: 1.2;
     text-align: center;
     margin-bottom: 16px;
-}
+} */
 
-.soc-list {
+/* .soc-list {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -674,10 +674,10 @@ padding-right: 15px;
 .soc-list__link--light-bgr:focus {
     fill: var(--tertiary-bg-and-text-color);
     background-color: var(--primary-accent-bg-and-text-color);
-}
+} */
 
 /* Стилі соц-мереж підвалу */
-.soc-list__link--dark-bgr {
+/* .soc-list__link--dark-bgr {
     fill: var(--tertiary-bg-and-text-color);
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms var(--transition-timing-function);
@@ -685,10 +685,10 @@ padding-right: 15px;
 .soc-list__link--dark-bgr:hover,
 .soc-list__link--dark-bgr:focus {
     background-color: var(--primary-accent-bg-and-text-color);
-}
+} */
 
 /* Постійні клієнти */
-.clients-container {
+/* .clients-container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -718,11 +718,11 @@ padding-right: 15px;
 .clients-list__link:focus {
     fill: var(--primary-accent-bg-and-text-color);
     border: 1px solid var(--primary-accent-bg-and-text-color);
-}
+} */
 
 /* ---------------- Сторінка Портфоліо ---------------- */
 /* Перелік проектів сторінки Портоліо*/
-.main-container {
+/* .main-container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -747,10 +747,10 @@ padding-right: 15px;
     display: block;
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* Оверлей на картці*/
-.project-item-visual {
+/* .project-item-visual {
     position: relative;
     overflow: hidden;
 }
@@ -774,9 +774,9 @@ padding-right: 15px;
     padding-bottom: 20px;
     padding-left: 24px;
     border: 1px solid #EEEEEE;
-}
+} */
 /* Описова частина карток */
-.project-item-meta__title {
+/* .project-item-meta__title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -785,4 +785,4 @@ padding-right: 15px;
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.9;
-}
+} */

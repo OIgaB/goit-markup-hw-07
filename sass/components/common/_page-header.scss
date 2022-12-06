@@ -1,0 +1,86 @@
+/*  Header  */
+.header-container {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-wrap {
+    @include centerFlex($jc: null);
+}
+.portfolio-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* Панель навігації*/
+.nav {
+    display: flex;
+    gap: 50px;
+    
+    &__link {
+        position: relative;
+        color: var(--primary-text-color);
+        transition: color 250ms var(--transition-timing-function);
+        @include font (500, 14px, 1.1, 0.02em);
+        
+        &:hover,
+        &:focus {
+            color: var(--primary-accent-bg-and-text-color);
+        }
+        &--current {
+            color: var(--primary-accent-bg-and-text-color);
+        }
+        &--current::after {
+            position: absolute;
+            left: 0;
+            bottom: -33px;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--primary-accent-bg-and-text-color);
+            border-radius: 2px;
+            opacity: 1;
+            transition: opacity 250ms var(--transition-timing-function);
+        }
+    }
+}
+/* Адреса та контакти */
+
+.header-contacts {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+
+    &__link {
+        @mixin centerFlex($jc: null);
+        color: var(--secondary-text-color);
+        transition: color 250ms var(--transition-timing-function);
+        @include font (500, 14px, 1.1);
+
+        &:hover,
+        &:focus {
+            color: var(--primary-accent-bg-and-text-color);
+        }
+    }
+
+    &__icon-envelope {
+        fill: currentColor;
+        margin-right: 10px;
+
+        &:hover,
+        &:focus {
+            fill: var(--primary-accent-bg-and-text-color);
+        }
+    }
+
+    &__icon-smartphone {
+        fill: currentColor;
+        margin-right: 10px;
+
+        &:hover,
+        &:focus {
+            fill: var(--primary-accent-bg-and-text-color);
+        }    
+    }
+}
+
+

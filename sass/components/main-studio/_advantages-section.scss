@@ -1,0 +1,35 @@
+/* Переваги студії */
+.advant-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advant-list {
+    @include centerFlex($ai: null);
+    gap: 30px;
+
+    &__item {
+        max-width: 270px;
+    }
+
+    &__title {
+        @include font (null, 14px, 1.1);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__desc {
+        color: var(--secondary-text-color);
+        @include font (null, 14px, 1.7);
+    }
+
+    &__icon-wrap {
+        background-color: var(--secondary-bg-color);
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        @include centerFlex ();
+    }
+}
+

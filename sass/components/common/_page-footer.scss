@@ -1,0 +1,113 @@
+// Підвал (без лого та соц-мереж)
+
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.footer-wrap {
+    @include centerFlex($ai: baseline, $jc: null); 
+}
+
+.address-wrap {
+    margin-top: 20px;
+}
+
+.footer-contacts__address-link {
+    color: var(--tertiary-bg-and-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer-contacts__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--transition-timing-function);
+    @include font (400, 14px, 1.7);
+
+
+    line-height: 1.7;
+    padding-top: 9px;
+    
+    &:hover,
+    &:focus {
+        color: var(--primary-accent-bg-and-text-color);
+    }
+}
+
+.soc-wrap {
+    margin-left: 70px;
+
+    &__text {
+        @include font (700, 14px, 1.14, null);
+        text-transform: uppercase;
+        color: var(--tertiary-bg-and-text-color);
+        padding-top: 12px;
+        margin-bottom: 20px;
+    }    
+}
+/* Стилі для іконок-соцмереж див. у файлі "_soc-icons.scss" цієї папки Common*/
+
+/* Підписка на розсилку */
+.signup-form {
+    margin-left: 93px;
+    width: 100%;
+
+    &__text {
+        @include font (700, 14px, 1.14);
+        text-transform: uppercase;
+        color: var(--tertiary-bg-and-text-color);
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        width: 345px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        padding-left: 16px;
+        margin-right: 12px;
+        color: rgba(255, 255, 255, 0.3);
+        @include font (400, 16px, 1.25);
+        transition: outline-color 250ms var(--transition-timing-function), border-color 250ms var(--transition-timing-function);
+        
+        &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25px;
+        }
+        &:focus-within {
+            border: none;
+            outline: 1px solid rgba(255, 255, 255, 0.3);
+        }    
+    }
+    &__btn-wrap {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        display: inline-block;
+    }
+
+    &__btn {
+        width: 200px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border-color: transparent;
+        background-color: var(--primary-accent-bg-and-text-color);
+        color: var(--tertiary-bg-and-text-color);
+        cursor: pointer;
+        @include font (700, 16px, 1.9, 0.06em);
+        padding-right: 62px;
+        
+        &-icon {
+            position: absolute;
+            top: 50%;
+            right: 28px;
+            transform: translateY(-50%);
+        }   
+    }
+}
